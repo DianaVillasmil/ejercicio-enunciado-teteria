@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Té como señora</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body background="te.jpg" style="">
+	<header>
+		<h1>Tetería Té como Señora</h1>
+	</header>
+	<section id="formulario">
+		<p>Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
+		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
+		<form action="">
+			<label for="Nombre"> Nombre:</label>
+			<input type="text" id="firstname" required=""/><br/><br/>
+			<label for="Apellido"> Apellido:</label>
+			<input type="text" id="lastname" required="" /><br/><br/>
+			<label for="Correo">Correo Electrónico:</label> 
+			<input type="email" id="email" required=""/><br/><br/>
+			<label for="Dirección">Dirección:</label>
+			<input type="text" id="address" required="" /><br/><br/>
+			<label for="Teléfono">Teléfono:</label>
+			<input type="number" id="phone" required=""/><br/><br/>
+			<label for="Selector">Selecciona un pack:</label>
+			<select name="pack" id="pack" required="">
+				<option value="Escoje tu opción">Escoje tu opción</option>
+				<option value="Pack de té clásico (Té negro)">Pack de té clásico (Té negro)</option>
+				<option value="Pack frutales (Hierbas y té con aromatizado con fruta">Pack frutales (Hierbas y té con aromatizado con fruta</option>
+				<option value="Pack variedades (Té verde, rojo y blanco)">Pack variedades (Té verde, rojo y blanco)</option>
+			</select>
+			<label for=""></label><br/><br/>
+			<input type="checkbox" id="newsletter" name="newsletter"/>Recibe nuestro newsletter mensual con actividades y sorteos
+			<input type="button" value="suscribir" id="boton" onclick="suscribir(); return false;" />
+		</form>
+	</section>
+	<section id="clientes">
+		<!-- Acá van los datos de ingresados por los clientes -->
+	</section>
+	<section id="productos">
+		<!-- Acá puedes crear lo que quieras-->
+	</section>
+	<script src="js/main.js"></script>
+</body>
+</html>
